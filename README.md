@@ -6,7 +6,14 @@ On the surface, it looks like a compact weather app with a chat interface, but i
 
 ---
 
-🎥 Demo video: <a url="https://www.youtube.com/watch?v=Nsal9Coj7b0"> https://www.youtube.com/watch?v=Nsal9Coj7b0 </a>
+🎥 Demo video: https://www.youtube.com/watch?v=Nsal9Coj7b0
+
+---
+
+## 🎨 User Interface (UI)
+
+📐 **Figma link:**  
+https://www.figma.com/design/9gk9WlsX66BYlmFNWTeCcr/Chibi-weather-assistant?node-id=0-1&t=Qx3PpCkrdGFASayl-1
 
 ---
 
