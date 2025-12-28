@@ -132,7 +132,7 @@ npm run dev
 
 ## 🎨 Art
 
-Chibi character and illustrations:
+Chibi character:
 **Art by: UYU.ART**
 
 ---
