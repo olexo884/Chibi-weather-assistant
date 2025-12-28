@@ -6,6 +6,10 @@ On the surface, it looks like a compact weather app with a chat interface, but i
 
 ---
 
+🎥 Demo video: <a url="https://www.youtube.com/watch?v=Nsal9Coj7b0"> https://www.youtube.com/watch?v=Nsal9Coj7b0 </a>
+
+---
+
 ## ✨ Key Features
 
 ### 🌡️ Weather
