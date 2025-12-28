@@ -1,0 +1,170 @@
+.main {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    gap: 10px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.bottom {
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.widget {
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #C7C7C7;
+    box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.widget:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.widgetInfo {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 8px;
+}
+
+.widgetInfo h3 {
+    font-size: 44px;
+    font-weight: normal;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.widget:hover .widgetInfo h3 {
+    transition: all 0.3s ease-in-out;
+    color: #ffffff;
+    -webkit-text-stroke: transparent;
+}
+
+.widgetInfo p {
+    color: #C7C7C7;
+    font-size: 20px;
+    margin-bottom: 4px;
+    margin-left: 2px;
+}
+
+.widgetTitle {
+    font-size: 20px;
+    color: #C7C7C7;
+}
+
+.widget img {
+    height: 52px;
+    transition: all 0.3s ease-in-out;
+}
+
+.widget:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* header widget */
+
+.header .widget {
+    background-color: #121212;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.header .widget img {
+    height: 64px;
+}
+
+.header .widgetInfo h3 {
+    font-size: 52px;
+}
+
+.header .widgetInfo p {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.header .widgetTitle {
+    font-size: 24px;
+}
+
+.header .widget:hover {
+    transform: none;
+}
+
+
+/* wind widget*/
+.windWidget {
+    cursor: pointer;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    background-color: #121212;
+}
+
+.windWidgetDirection {
+    position: absolute;
+}
+
+.windWidgetCompass {
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    margin-left: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.windWidgetData h3 {
+    font-size: 42px;
+    font-weight: normal;
+    -webkit-text-stroke: 1px #ffffff;
+    transition: all 0.3s ease-in-out;
+    color: transparent;
+}
+
+.windWidget:hover .windWidgetData h3 {
+    -webkit-text-stroke: transparent;
+    transition: all 0.3s ease-in-out;
+    color: #ffffff;
+}
+
+.windWidget:hover .windWidgetCompass {
+    height: 120px;
+    width: 120px;
+    transition: all 0.3s ease-in-out;
+}
+
+.windWidgetData p {
+    font-size: 16px;
+    color: #C7C7C7;
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 1280px) {
+    .bottom {
+        aspect-ratio: 1 / 1;
+    }
+}

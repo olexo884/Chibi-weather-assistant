@@ -1,0 +1,56 @@
+.main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./../assets/images/bg-img.png");
+    background-color: #0C0C0C;
+    box-shadow: inset 0 0 70px 15px #000000;
+    overflow: hidden;
+}
+
+.main .content {
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    gap: 10px;
+    width: 1300px;
+    transform: scale(1);
+}
+
+.main .left-widgets {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.errorMessage {
+    display: flex;
+    color: #d83232;
+    font-size: 32px;
+}
+
+@media screen and (max-width: 1280px) {
+    .main {
+        display: block;
+        padding: 30px;
+        overflow: auto;
+    }
+
+    .main .content {
+        display: block;
+        width: 100%;
+    }
+
+    .main .right-widgets {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+   .main {
+        padding: 10px;
+    }
+}
+

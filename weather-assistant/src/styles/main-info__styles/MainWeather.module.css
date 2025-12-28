@@ -1,0 +1,157 @@
+.main {
+    background-color: #121212;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .weatherIcon {
+    display: flex;
+    margin: 20px auto 20px auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.weatherIcon:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+.header h1 {
+    font-size: 152px;
+    font-weight: 400;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.header:hover h1 {
+    transition: all 0.3s ease-in-out;
+    color: transparent;
+    -webkit-text-stroke: 3px #C7C7C7;
+}
+
+.header h3 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #C7C7C7;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.main hr {
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    margin: 20px 0;
+    border-color: #3F3F3F;
+}
+
+.bottomInfo {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    align-items: center;
+}
+
+.location {
+    overflow: hidden;
+    word-break: break-all;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 8px;
+    border-radius: 10px;
+    border: 1px solid #C7C7C7;
+    width: 92px;
+    height: 92px;
+    box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.location:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.location:hover img {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.bottomInfo .location p {
+    font-size: 20px;
+    line-height: 80%;
+    text-align: center;
+    color: #C7C7C7;
+}
+
+.location img {
+    width: 18px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.date {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.date:hover h3 {
+    transition: all 0.3s ease-in-out;
+    color: #ffffff;
+    transform: scale(1.1);
+    -webkit-text-stroke: transparent;
+}
+
+.date p {
+    font-size: 24px;
+    color: #C7C7C7;
+}
+
+.date h3 {
+    transition: all 0.3s ease-in-out;
+    font-size: 80px;
+    font-weight: 400;
+    color: transparent;
+
+    -webkit-text-stroke: 2px #C7C7C7;
+}
+
+@media screen and (max-width: 1280px) {
+    .header h1 {
+        font-size: 250px;
+    }
+
+    .main .weatherIcon {
+        margin: auto;
+        width: 22vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header h1 {
+        font-size: 152px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main .weatherIcon {
+        width: 85%;
+        margin: 40px auto 40px auto;
+    }
+}
